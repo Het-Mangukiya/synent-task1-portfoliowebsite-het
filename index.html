@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Het Mangukiya | Portfolio</title>
+    <meta
+      name="description"
+      content="Het Mangukiya — Computer Engineering student at CHARUSAT, DEPSTAR. Portfolio showcasing projects, skills in DSA, problem solving, and software development."
+    />
+    <meta property="og:title" content="Het Mangukiya | Portfolio" />
+    <meta
+      property="og:description"
+      content="Computer Engineering student at CHARUSAT, building practical projects and improving DSA skills."
+    />
+    <meta property="og:image" content="./profile-photo-web.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#07111f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="live-mode">
+    <div class="background" aria-hidden="true">
+      <div class="background-grid"></div>
+      <div class="background-glow background-glow-one"></div>
+      <div class="background-glow background-glow-two"></div>
+      <div class="background-orb background-orb-one"></div>
+      <div class="background-orb background-orb-two"></div>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#hero">
+        <span class="brand-mark"></span>
+        <span id="brandName">Het Mangukiya</span>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#connect">Connect</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="hero" id="hero">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow" id="eyebrow">Computer Engineering Student</p>
+          <h1 class="hero-title">
+            <span id="name">Het Mangukiya</span>
+            <span class="accent-line" id="typedRole">Computer Engineering student with interest in DSA.</span>
+          </h1>
+          <p class="hero-description" id="tagline">
+            Computer Engineering student at CHARUSAT, studying at DEPSTAR and building practical projects while improving core computer science fundamentals and DSA skills.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary magnetic" href="#connect">View profiles</a>
+            <a class="button button-secondary magnetic" href="#highlights">See highlights</a>
+          </div>
+
+          <div class="status-row">
+            <div class="status-card magnetic" data-reveal>
+              <span class="status-label">Currently</span>
+              <strong id="availability">Focused on projects and continuous learning</strong>
+            </div>
+            <div class="status-card magnetic" data-reveal>
+              <span class="status-label">Base</span>
+              <strong id="location">CHARUSAT, DEPSTAR</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel magnetic" id="heroPanel" data-reveal>
+          <div class="hero-panel-top">
+            <div class="avatar-wrap">
+              <img
+                id="avatar"
+                class="avatar"
+                src="./profile-photo-web.jpg"
+                alt="Het Mangukiya profile photo"
+              />
+            </div>
+          </div>
+
+          <div class="hero-stats" id="statsGrid"></div>
+
+          <div class="signal-card">
+            <div>
+              <p class="signal-label">Live response</p>
+              <strong class="signal-title" id="signalTitle">Hover and click for interaction</strong>
+            </div>
+            <span class="signal-pill" id="signalPill">ACTIVE</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">About</p>
+          <h2>Focused on learning by building real projects.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-card magnetic" data-reveal>
+            <p id="aboutText">
+              I focus on building practical software projects and strengthening my computer engineering foundation through hands-on development. Every project teaches me something new, and I believe the best way to learn is by creating things that work.
+            </p>
+          </article>
+          <aside class="quote-card magnetic" data-reveal>
+            <span class="quote-mark">"</span>
+            <p id="quoteText">
+              I am particularly interested in software development, DSA, problem solving, and system design. I strive to write clean, efficient code and continuously improve my skills.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="highlights">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Projects & Skills</p>
+          <h2>Academic background, technologies, and selected work.</h2>
+        </div>
+        <div class="highlights-grid" id="highlightCards"></div>
+      </section>
+
+      <section class="section connect-section" id="connect">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Connect</p>
+          <h2>Profiles and platforms I use.</h2>
+        </div>
+        <div class="connect-grid">
+          <nav class="link-grid" aria-label="Social links" id="socialLinks"></nav>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <hr class="footer-divider" />
+      <p>Made with <span class="footer-heart">❤️</span> by Het Mangukiya</p>
+      <p>&copy; 2026 — All rights reserved</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
